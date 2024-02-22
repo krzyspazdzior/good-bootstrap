@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Boostrap Project | My School</title>
+  <title>Boostrap Project | Add Post</title>
   <link rel="icon" type="image/x-icon" href="logo.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
@@ -33,6 +33,9 @@
     }
     .aside-cards{
         height: 100%;
+    }
+    .col-md-9 img{
+      height: 350px
     }
   </style>
 </head>
@@ -65,43 +68,38 @@
     </div>
 </nav>
 
-<div class="main-content d-flex mt-5">
-   <main class="container d-flex justify-content-center mt-5">
-    <div class="rounded" style="width: 50rem; height: 50rem; margin-top: 5rem; background-color: #404347">
-        <img src="zsti.jpg" class="card-img-top" alt="my school">
-        <div class="card-body">
-            <h5 class="card-title">About My School</h5>
-            <p class="fs-2 p-5">In the picture you can see the school i attend to. We learn about IT stuff everyday and make great progress. At the moment im in the second grade. We have many IT lessons like object-oriented programming, website design, software design and databases. Website design is my passion and I would like to connect my future with it. After I finish teaching at school, I will go to college or start looking for a job in this industry. I have many good friends here with whom we spend time during breaks. They are always willing to help. They also have a lot of experience in programming, so I can ask them for advice.
 
-            </p>
+<div class="container-fluid mt-5 aside-section d-flex mx-auto justify-content-center align-items-center">
+    <div class="row justify-content-center align-items-center p-5 d-flex flex-column" style="margin-top: 5rem; width: 1000px; background-color: #212529;">
+        <h2 class="p-3">Add Posts to Blog!</h2>
+        <div class="col-md-6">
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="title">Post Title:</label>
+                    <input type="text" class="form-control" id="title" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="content">Post Content:</label>
+                    <textarea class="form-control" id="content" name="content" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="image">Upload Image:</label>
+                    <input type="file" class="form-control-file" id="image" name="image" accept="image/*" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
     </div>
-</main>
-<aside class="d-flex flex-column align-items-center col-md-3">
-    <div class="aside-cards d-flex flex-column justify-content-center align-items-center justify-content-center">
-      <div class="card mb-4 mx-auto" style="width: 18rem;">
-        <img src="react.png" alt="react logo">
-          <div class="card-body text-center">
-              <h5 class="card-title">React</h5>
-              <p class="card-text">React has gained widespread adoption in the web development community due to its ease of use, efficiency, and versatility. </p>
-              <a href="https://react.dev/" class="btn btn-primary">Click to Visit</a>
-          </div>
-      </div>
-      <div class="card mx-auto" style="width: 18rem;">
-        <img src="bootstrap.png" alt="bootstrap logo">
-          <div class="card-body text-center">
-              <h5 class="card-title">Bootstrap</h5>
-              <p class="card-text">Bootstrap is a great tool to build advanced websites rapidly.</p>
-              <a href="https://getbootstrap.com/" class="btn btn-primary">Click to Visit</a>
-          </div>
-      </div>
-  </div>
-    
-</aside>
-    </div>
+</div>
 
 
-    <footer class="footer mt-5 ">
+  
+
+    <footer class="footer mt-5 fixed-bottom">
         <div class="container-fluid">
             <p>&copy; 2024 Krzysztof Paździor. All rights reserved.</p>
         </div>

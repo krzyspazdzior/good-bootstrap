@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boostrap Project | Blog</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #343a40;
+      color: #fff;
+    }
+    .navbar {
+      background-color: #212529;
+    }
+    .card {
+      background-color: #495057;
+      color: #fff;
+    }
+    .footer {
+      background-color: #212529;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer *{
+        margin: 0;
+    }
+    .aside-cards{
+        height: 100%;
+    }
+    .col-md-9 img{
+      height: 350px
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="logo.png" alt="logo" class="img-fluid" style="height: 50px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="index.html">Home</a>
+                </li>
+                <li class="nav-item mr-5">
+                    <a class="nav-link" href="my-school.html">My School</a>
+                </li>
+                <li class="nav-item mr-5">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item mr-5">
+                    <a class="nav-link" href="add-post.html">Add Posts</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container-fluid mt-5 aside-section d-flex mx-auto justify-content-center align-items-center">
+    <div class="row justify-content-center align-items-center" style="flex-basis: 100%; margin-top: 5rem; max-width: 1500px;">
+      <div class="col-md-9">
+        <div class="text-center">
+          <h2>Blog Posts</h2>
+        </div>
+        <div class="row mt-4 d-flex flex-row align-items-start flex-wrap" style="display: flex; flex-direction: row; justify-content: space-between;">
+          <div class="col-md-6" style="flex: 0 0 auto;">
+            <div class="card mb-4">
+              <img src="grade.jpg" class="card-img-top" alt="good grade" style="height: 300px;">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: bold;">Good Grade</h5>
+                <p class="card-text">I've got a good great from maths today yay.</p>
+                <p>Author: Ben</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" style="flex: 0 0 auto;">
+            <div class="card mb-4">
+              <img src="leg.jpg" class="card-img-top" alt="broken leg" style="height: 300px;">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: bold;">Broken Leg</h5>
+                <p class="card-text">I have fallen down the stairs and broke my leg :(</p>
+                <p>Author: Michael</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" style="flex: 0 0 auto;">
+            <div class="card mb-4">
+              <img src="fight.jpg" class="card-img-top" alt="board games" style="height: 300px;">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: bold;">Board Games!</h5>
+                <p class="card-text">Hey! Today I played board games with my family!</p>
+                <p>Author: Trapollo</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" style="flex: 0 0 auto; ">
+            <div class="card mb-4">
+              <img src="dog.jpg" class="card-img-top" alt="frank brawl stars" style="height: 300px;">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: bold;">My Motto</h5>
+                <p class="card-text">Siema witam jestem Frank</p>
+                <p>Author: Mathew Sycz</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" style="flex: 0 0 auto; ">
+            <div class="card mb-4">
+              <img src="dinner.jpg" class="card-img-top" alt="dinner" style="height: 300px;">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: bold;">Good Dinner</h5>
+                <p class="card-text">My mother made good dinner today and I wanted to share it here.</p>
+                <p>Author: Kyle</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" style="flex: 0 0 auto;">
+            <div class="card mb-4">
+              <img src="games.jpg" class="card-img-top" alt="games" style="height: 300px;">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: bold;">Games with Friend!</h5>
+                <p class="card-text">Hey, today I played console games with my friend.</p>
+                <p>Author: Dustin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+
+    <footer class="footer mt-5 ">
+        <div class="container-fluid">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
